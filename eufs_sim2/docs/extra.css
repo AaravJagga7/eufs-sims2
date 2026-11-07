@@ -1,0 +1,61 @@
+/* Base class for custom notes */
+.custom-note {
+    border-left: 6px solid #007acc;
+    background-color: #e7f3ff;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+
+.custom-note h2 {
+    margin-top: 0;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.custom-note p {
+    margin: 0;
+}
+
+.custom-note code {
+    background-color: #fff0db;
+    padding: 2px 4px;
+    border-radius: 3px;
+    color: #d63333;
+}
+
+/* Inheritable classes with different colors */
+.custom-note.note {
+    border-left-color: #007acc;
+    background-color: #e7f3ff;
+}
+
+.custom-note.note h2 {
+    color: #007acc;
+}
+
+.custom-note.warning {
+    border-left-color: #d63333;
+    background-color: #ffe5e5;
+}
+
+.custom-note.warning h2 {
+    color: #d63333;
+}
+
+.custom-note.tips {
+    border-left-color: #33d633;
+    background-color: #e5ffe5;
+}
+
+.custom-note.tips h2 {
+    color: #33d633;
+}
+
+.center-table {
+  text-align: left; /* Centers the entire table */
+}
+
+.md-typeset .center-table :is(td,th):not([align]) {
+  text-align: initial; /* Resets alignment for table cells */
+}

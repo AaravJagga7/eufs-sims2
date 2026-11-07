@@ -1,0 +1,10 @@
+run_name: smoke_coco8
+model: yolo11n.pt
+data: coco8.yaml
+imgsz: 640
+epochs: 3
+batch: 16
+patience: 10
+save_period: 1
+project: checkpoints
+seed: 42

@@ -1,0 +1,19 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Large video recordings (keep snapshots and metrics)
+results/*.mp4
+*.mp4
+
+# OS generated files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# Temporary logs
+logs/*.log
+*.log
+

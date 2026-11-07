@@ -1,0 +1,47 @@
+site_name: eufs_sim2 Docs
+site_url: https://eufs.gitlab.io/simulation_group/eufs_sim2/
+site_dir: public
+theme: readthedocs
+site_description: Lightweight Autonomous Vehicle Simulator for Formula Student Competitions
+
+theme:
+    name: readthedocs
+    highlightjs: true
+    hljs_languages:
+        - yaml
+        - python
+        - cpp
+        - bash
+        - shell
+        - zsh
+
+markdown_extensions: 
+    - tables
+    - md_in_html
+    - admonition
+
+nav:
+    - "Home": "README.md"
+    - "Changelog": "Changelog.md"
+    - "User Guide":
+        - "Getting Started": "user-guide/getting-started.md"
+        - "Simulation Architecture": "user-guide/sim-architecture.md"
+        - "User Interface": "user-guide/user-interface.md"
+    - "Plugins":
+        - "Base plugin"  : "plugins/base.md"
+        - "Sensors"      : "plugins/sensors.md"
+        - "State Machine": "plugins/state-machine.md"
+        - "More plugins" : "plugins/more-plugins.md"
+        - "Configuration": "plugins/configuration.md"
+        - "Custom Plugin": "plugins/custom-plugin.md"
+    - "Tutorials":
+        - "Basics": "tutorials/basics.md"
+    - "Developers":
+        - "Debugging": "miscellaneous/debugging.md"
+        - "Troubleshooting": "miscellaneous/troubleshooting.md"
+    - "Contributors":
+        - "Contributing": "miscellaneous/CONTRIBUTING.md"
+        - "Contributors": "miscellaneous/contributors.md"
+
+extra_css:
+    - extra.css

@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="OS1-128">
+<!-- Modify from https://github.com/wilselby/ouster_example/blob/master/ouster_description/urdf/OS1-64.urdf.xacro-->
+  <xacro:property name="M_PI" value="3.1415926535897931" />
+  <xacro:macro name="OS1-128" params="*origin parent:=base_footprint name:=ouster lidar_link:=lidar imu_link:=imu base_link:=base_link">
+
+    <joint name="${name}_mount_joint" type="fixed">
+      <xacro:insert_block name="origin" /> 
+      <parent link="${parent}"/>
+      <child link="${name}"/>
+    </joint>
+
+    <link name="${name}" />
+
+    <link name="${name}_${imu_link}" />
+
+    <link name="${name}_${lidar_link}" />
+
+    <joint name="${name}_${imu_link}_joint" type="fixed">
+      <parent link="${name}" />
+      <child link="${name}_${imu_link}" />
+      <origin xyz="0.006253 -0.011775 0.007645" rpy="0 0 0" />
+    </joint>
+
+    <joint name="${name}_${lidar_link}_joint" type="fixed">
+      <parent link="${name}" />
+      <child link="${name}_${lidar_link}" />
+      <origin xyz="0.0 0.0 0.03618" rpy="0 0 0" />
+    </joint>
+
+  </xacro:macro>
+</robot>

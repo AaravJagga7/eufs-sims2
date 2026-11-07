@@ -1,0 +1,10 @@
+# Python byte-code
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Temporary swap & OS files
+*.swp
+*.swo
+.DS_Store
+Thumbs.db

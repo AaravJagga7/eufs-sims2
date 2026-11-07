@@ -1,0 +1,12 @@
+run_name: 20261031_segformer_b0_road
+model: nvidia/mit-b0
+data_root: /content/data
+datasets: [idd, bdd]
+epochs: 40
+batch: 8
+lr: 0.00006
+head_lr_mult: 10
+weight_decay: 0.01
+workers: 2
+project: checkpoints
+seed: 42

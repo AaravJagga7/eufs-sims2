@@ -1,0 +1,13 @@
+variables:
+  DEPENDENCIES:
+    eufs/simulation_group/state_lib
+    eufs/infrastructure_group/eufs_gmock_matchers
+    eufs/infrastructure_group/eufs_msgs
+    eufs/localisation_group/slam/eufs_logger
+    eufs/simulation_group/vehicle_models/vehicle_models
+    eufs/localisation_group/map_lib
+
+
+include:
+  - project: 'eufs/infrastructure_group/eufs_ci'
+    file: /templates/pipelines/ci-ros-package-with-mkdocs-pipeline.gitlab-ci.yml

@@ -1,0 +1,10 @@
+run_name: 20261031_yolo11s_all8
+model: yolo11s.pt
+data: configs/data_det_pothole_hump.yaml
+imgsz: 640
+epochs: 50
+batch: 16
+patience: 10
+save_period: 5
+project: checkpoints
+seed: 42

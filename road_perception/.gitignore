@@ -1,0 +1,13 @@
+data/
+checkpoints/
+wandb/
+runs/
+__pycache__/
+*.pt
+*.onnx
+*.zip
+venv/
+.venv/
+.ipynb_checkpoints/
+data_processed/
+eye_check_*.png

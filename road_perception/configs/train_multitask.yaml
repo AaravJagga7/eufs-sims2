@@ -1,0 +1,16 @@
+run_name: 20261102_multitask_uncertainty
+data_root: /content/data
+datasets: [speedbump, rdd, bdd, idd]
+tasks: [det, seg, depth]
+loss_weighting: uncertainty
+pretrained: yolo11s.pt
+epochs: 60
+batch: 16
+lr_body: 0.0001
+lr_heads: 0.001
+lr_log_vars: 0.01
+weight_decay: 0.01
+warmup_epochs: 3
+workers: 2
+project: checkpoints
+seed: 42

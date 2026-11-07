@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>eufs_sim2</name>
+  <version>0.0.0</version>
+  <description>A simulation project aimed at validating the software developed for the Formula Student competition, without the need for physical vehicle testing.</description>
+
+  <maintainer email="henri.hegedus@gmail.com">Henrich Hegedus</maintainer>
+  <maintainer email="victorbaeza07@gmail.com">Victor Baeza</maintainer>
+
+  <license>MIT</license>
+
+  <url type="website">http://eufs.co</url>
+  <url type="repository">https://gitlab.com/eufs/simulation_group/eufs_sim2</url>
+  <url type="bugtracker">https://gitlab.com/eufs/simulation_group/eufs_sim2/-/issues</url>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <test_depend>ament_cmake_gtest</test_depend>
+
+  <depend>rclcpp</depend>
+  <depend>std_srvs</depend>
+  <depend>state_lib</depend>
+  <depend>map_lib</depend>
+  <depend>ackermann_msgs</depend>
+  <depend>rosgraph_msgs</depend>
+  <depend>geometry_msgs</depend>
+  <depend>sensor_msgs</depend>
+  <depend>eufs_msgs</depend>
+  <depend>vehicle_models</depend>
+  <depend>tf2_geometry_msgs</depend>
+  <depend>geodesy</depend>
+  <depend>spdlog</depend>
+  <depend>foxglove_bridge</depend>
+  <depend>xacro</depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

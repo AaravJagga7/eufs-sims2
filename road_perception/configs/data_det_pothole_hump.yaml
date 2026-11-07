@@ -1,0 +1,23 @@
+# Paths are inside Colab, where the zips get unzipped
+path: /content/data
+train:
+  - speedbump/images/train
+  - rdd/images/train
+  - bdd/images/train
+val:
+  - speedbump/images/val
+  - rdd/images/val
+  - bdd/images/val
+test:
+  - speedbump/images/test
+  - rdd/images/test
+  - bdd/images/test
+names:
+  0: pothole
+  1: hump
+  2: car
+  3: two_wheeler
+  4: bus_truck
+  5: person
+  6: traffic_light
+  7: traffic_sign

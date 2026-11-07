@@ -1,0 +1,13 @@
+detection:
+  0: pothole
+  1: hump
+  2: car
+  3: two_wheeler
+  4: bus_truck
+  5: person
+  6: traffic_light
+  7: traffic_sign
+segmentation:
+  0: non_road
+  1: road
+  255: ignore

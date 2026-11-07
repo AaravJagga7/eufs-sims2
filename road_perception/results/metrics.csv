@@ -1,0 +1,8 @@
+date,run_name,model,dataset,split,metric_name,value
+2026-10-30,stereosgbm_baseline,stereosgbm,kitti,test,depth_rmse_0_10,2.4343
+2026-10-30,stereosgbm_baseline,stereosgbm,kitti,test,depth_rmse_10_25,5.9227
+2026-10-30,stereosgbm_baseline,stereosgbm,kitti,test,depth_rmse_25_50,8.5175
+2026-10-30,stereosgbm_baseline,stereosgbm,kitti,test,depth_absrel,0.0765
+2026-10-30,stereosgbm_baseline,stereosgbm,hardware,test,fps,39.6903
+2026-10-30,stereosgbm_baseline,stereosgbm,hardware,test,latency_ms,25.1950
+2026-10-30,stereosgbm_baseline,stereosgbm,hardware,test,params_M,0.0000
