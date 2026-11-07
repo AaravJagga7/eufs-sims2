@@ -82,3 +82,4 @@ Or via launch file:
 ```bash
 ros2 launch launch_ros_sim.launch.py rate_hz:=20.0 autonomous_mode:=True
 ```
+
